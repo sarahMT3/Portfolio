@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <h2 class="logo">Sarah <span>Portfólio</span></h2>
+
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Projetos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero-->
+    <section class="hero">
+        <h1>Olá, Eu sou a <span>Sarah</span></h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas, procura oportunidades para desenvolver habilidades
+            técnicas e contribuir com projetos inovadores.</p>
+    </section>
+
+    <section class="about">
+
+        <div class="about-text">
+            <h2>Sobre <span>Mim</span></h2>
+            <p class="pt">Meu nome é Sarah, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas.
+                Tenho interesse em desenvolvimento web e mobile, além de meus hobbies incluírem ler livros e ouvir
+                música.</p>
+
+            <button class="btn-main">Entre em Contato</button>
+            <button class="btn-outline">Baixar Currículo</button>
+        </div>
+
+        <div class="about-cards">
+            <div class="card">
+                <h3>Habilidades desenvolvidas</h3>
+                <p>Criar aplicativos e websites responsivos utilizando tecnologias como HTML, CSS e JavaScript.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sobre Mim</h3>
+                <p>Curiosa e atenta aos detalhes, sempre buscando aprender novas tecnologias e aprimorar minhas
+                    habilidades técnicas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Carreira</h3>
+                <p>Grande paixão por Fullstack e Cloud Computing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Minhas <span>Habilidades</span></h2>
+
+        <div class="filters">
+            <button onclick="filtrar('todas')">Todas</button>
+            <button onclick="filtrar('frontend')">Frontend</button>
+            <button onclick="filtrar('backend')">Backend</button>
+            <button onclick="filtrar('ferramentas')">Ferramentas</button>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill frontend">HTML/CSS</div>
+            <div class="skill frontend">JavaScript</div>
+            <div class="skill frontend">React</div>
+
+            <div class="skill backend">Node.js</div>
+            <div class="skill backend">Python</div>
+            <div class="skill backend">C#</div>
+
+            <div class="skill ferramentas">Git</div>
+            <div class="skill ferramentas">MySQL</div>
+
+        </div>
+    </section>
+
+    <section class="projetos">
+
+        <h2><span>Projetos</span></h2>
+
+        <div class="grid">
+
+            <div class="projeto-card">
+                <img src="" alt="">
+                <h3>Projeto 1</h3>
+                <p>Alguma coisa</p>
+            </div>
+
+            <div class="projeto-card">
+                <img src="" alt="">
+                <h3>Projeto 1</h3>
+                <p>Alguma coisa</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+
+        <h2>Entre em <span>Contato</span></h2>
+
+        <p class="subtitle">Tem algum projeto em mente? Vamos conversar!</p>
+
+        <div class="contato-container">
+
+            <div class="info-contato">
+
+                <h3> Informações de Contato</h3>
+
+                <div class="info-item">
+                    <div class="icon">✉</div>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <p>Me cham lá</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div>
+                        <strong>Localização</strong>
+                        <p>Brasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-form">
+                <h3>Mande uma Mensagem</h3>
+
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="alguem@gmail.com">
+                <textarea placeholder="Sua mensagem"></textarea>
+
+                <button>Enviar Mensagem</button>
+            </div>
+
+        </div>
+
+    </section>
+
+<script src="script.js"></script>
+
+    <footer>
+        <p>© 2026 Sarah, todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
