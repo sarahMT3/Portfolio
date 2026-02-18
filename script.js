@@ -74,3 +74,21 @@ if (formularioContato) {
         }
     });
 }
+
+const btnTema = document.getElementById('theme-toggle');
+const rootElement = document.documentElement;
+
+btnTema.addEventListener('click', () => {
+    if (rootElement.hasAttribute('data-theme')) {
+        rootElement.removeAttribute('data-theme');
+        localStorage.setItem('tema', 'light');
+    } else {
+        rootElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('tema', 'dark');
+    }
+});
+
+const temaSalvo = localStorage.getItem('tema');
+if (temaSalvo === 'dark') {
+    rootElement.setAttribute('data-theme', 'dark');
+}
