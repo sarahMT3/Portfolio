@@ -14,49 +14,61 @@
         <nav class="nav">
             <h2 class="logo">Sarah <span>Portfólio</span></h2>
 
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato-container">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Hero-->
-    <section class="hero">
-        <h1>Olá, Eu sou a <span>Sarah</span></h1>
+    <section id="hero"  class="hero">
+        <h1 class="maquina-escrever">Olá, Eu sou a <span>Sarah</span></h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas, procura oportunidades para desenvolver habilidades
             técnicas e contribuir com projetos inovadores.</p>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
 
-        <div class="about-text">
-            <h2>Sobre <span>Mim</span></h2>
-            <p class="pt">Meu nome é Sarah, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas.
-                Tenho interesse em desenvolvimento web e mobile, além de meus hobbies incluírem ler livros e ouvir
-                música.</p>
+        <h2 class="titulo-centralizado">Sobre <span>Mim</span></h2>
 
-            <button class="btn-main">Entre em Contato</button>
-            <button class="btn-outline">Baixar Currículo</button>
-        </div>
+        <div class="conteudo-dividido">
+            <div class="about-text">
+                <p>Meu nome é Sarah, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas.
+                    Tenho interesse em desenvolvimento web e mobile, além de meus hobbies incluírem ler livros e ouvir
+                    música.</p>
 
-        <div class="about-cards">
-            <div class="card">
-                <h3>Habilidades desenvolvidas</h3>
-                <p>Criar aplicativos e websites responsivos utilizando tecnologias como HTML, CSS e JavaScript.</p>
+                    <div class="about-buttons">
+                        <a href="#contato-container" class="btn-main">Entre em Contato</a>
+                        <a href="pdfs/Sarah Matos Curriculo E2.pdf" target="_blank" class="btn-outline">Baixar Currículo</a>
+                    </div>
             </div>
 
-            <div class="card">
-                <h3>Sobre Mim</h3>
-                <p>Curiosa e atenta aos detalhes, sempre buscando aprender novas tecnologias e aprimorar minhas
-                    habilidades técnicas.</p>
-            </div>
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Habilidades desenvolvidas</h3>
+                    <p>Criar aplicativos e websites responsivos utilizando tecnologias como HTML, CSS e JavaScript.</p>
+                </div>
 
-            <div class="card">
-                <h3>Carreira</h3>
-                <p>Grande paixão por Fullstack e Cloud Computing.</p>
+                <div class="card">
+                    <h3>Sobre Mim</h3>
+                    <p>Curiosa e atenta aos detalhes, sempre buscando aprender novas tecnologias e aprimorar minhas
+                        habilidades técnicas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Carreira</h3>
+                    <p>Grande paixão por Fullstack e Cloud Computing.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -65,29 +77,29 @@
         <h2>Minhas <span>Habilidades</span></h2>
 
         <div class="filters">
-            <button onclick="filtrar('todas')">Todas</button>
-            <button onclick="filtrar('frontend')">Frontend</button>
-            <button onclick="filtrar('backend')">Backend</button>
-            <button onclick="filtrar('ferramentas')">Ferramentas</button>
+            <button class="btn-filter active" data-target="todas">Todas</button>
+            <button class="btn-filter" data-target="frontend">Frontend</button>
+            <button class="btn-filter" data-target="backend">Backend</button>
+            <button class="btn-filter" data-target="ferramentas">Ferramentas</button>
         </div>
 
         <div class="skills-container">
+            
+            <div class="skill-card frontend">HTML/CSS</div>
+            <div class="skill-card frontend">JavaScript</div>
+            <div class="skill-card frontend">React</div>
 
-            <div class="skill frontend">HTML/CSS</div>
-            <div class="skill frontend">JavaScript</div>
-            <div class="skill frontend">React</div>
+            <div class="skill-card backend">Node.js</div>
+            <div class="skill-card backend">Python</div>
+            <div class="skill-card backend">C#</div>
 
-            <div class="skill backend">Node.js</div>
-            <div class="skill backend">Python</div>
-            <div class="skill backend">C#</div>
-
-            <div class="skill ferramentas">Git</div>
-            <div class="skill ferramentas">MySQL</div>
+            <div class="skill-card ferramentas">Git</div>
+            <div class="skill-card ferramentas">MySQL</div>
 
         </div>
     </section>
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
 
         <h2><span>Projetos</span></h2>
 
@@ -115,7 +127,7 @@
 
         <p class="subtitle">Tem algum projeto em mente? Vamos conversar!</p>
 
-        <div class="contato-container">
+        <div id="contato-container" class="contato-container">
 
             <div class="info-contato">
 
@@ -125,7 +137,7 @@
                     <div class="icon">✉</div>
                     <div>
                         <strong>LinkedIn</strong>
-                        <p>Me cham lá</p>
+                        <a href="https://www.linkedin.com/in/sarah-cristina-dos-matos/" target="_blank"><p>Me chama lá</p></a>
                     </div>
                 </div>
 
@@ -138,21 +150,23 @@
                 </div>
             </div>
 
-            <div class="contato-form">
+            <form id="meu-form" action="https://formsubmit.co/sarahmatos083@gmail.com" method="post" class="contato-form">
                 <h3>Mande uma Mensagem</h3>
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
 
-                <input type="text" placeholder="Seu nome">
-                <input type="email" placeholder="alguem@gmail.com">
-                <textarea placeholder="Sua mensagem"></textarea>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
 
-                <button>Enviar Mensagem</button>
-            </div>
+                <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+
+                <p id="mensagem-sucesso" style="display: none; color: #5e48ff; margin-top: 15px; font-weight: bold; text-align: center;">Mensagem enviada com sucesso!</p>
+            </form>
 
         </div>
 
     </section>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
     <footer>
         <p>© 2026 Sarah, todos os direitos reservados.</p>
