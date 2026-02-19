@@ -680,9 +680,6 @@ footer p {
     margin-top: 100px;
 }
 
-* {
-    -webkit-tap-highlight-color: transparent;
-}
 
 @media (max-width: 768px) {
 
@@ -710,6 +707,8 @@ footer p {
         padding: 0;
         margin: 0;
         list-style: none;
+
+        -webkit-tap-highlight-color: transparent;
     }
 
     .nav-links.active {
