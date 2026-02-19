@@ -49,8 +49,13 @@
 }
 
 @keyframes move {
-    from { transform: translate(0,0) scale(1); }
-    to { transform: translate(150px, 100px) scale(1.2); }
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(150px, 100px) scale(1.2);
+    }
 }
 
 [data-theme="dark"] .aura {
@@ -70,9 +75,17 @@
     transform: scale(1.2);
 }
 
-.icon-sol { display: none;}
-[data-theme="dark"] .icon-sol { display: block; }
-[data-theme="dark"] .icon-lua { display: none; }
+.icon-sol {
+    display: none;
+}
+
+[data-theme="dark"] .icon-sol {
+    display: block;
+}
+
+[data-theme="dark"] .icon-lua {
+    display: none;
+}
 
 * {
     margin: 0;
@@ -186,19 +199,36 @@ html {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 19ch; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 19ch;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #5e48ff; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #5e48ff;
+    }
 }
 
 /* Versão animada para celular*/
 @keyframes typing-mobile {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .hero p {
@@ -225,7 +255,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
 }
 
 .about-grid {
@@ -258,7 +288,7 @@ html {
     background: transparent;
     font-size: 1.25rem;
     padding-bottom: 15px;
-   
+
 }
 
 h2 span {
@@ -338,7 +368,7 @@ section {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.80rem;
-    
+
 }
 
 .filters button {
@@ -347,12 +377,12 @@ section {
 }
 
 .btn-filter {
-    color: black;
-    border: 0px solid #e2e8f0;
-    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: var(--texto-principal);
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
 }
 
@@ -375,7 +405,7 @@ section {
 .skill-card {
     background-color: var(--cards-bg);
     padding: 30px 30px;
-    border: 1px solid #ddd;
+    border: none;
     color: var(--texto-principal);
     border-radius: 10px;
     text-align: center;
@@ -383,11 +413,12 @@ section {
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.skill:hover {
+
+.skill-card:hover {
     transform: scale(1.05) translate(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: #5e48ff;
-    z-index: 1;
+    box-shadow: 0 15px 30px rgba(94, 72, 255, 0.3);
+    border: 1px solid #5e48ff;
+    cursor: pointer;
 }
 
 .skill-card.hide {
@@ -409,6 +440,7 @@ section {
 .projetos h2 {
     font-size: 2.25rem;
 }
+
 .projetos span {
     color: #5e48ff;
 }
@@ -457,7 +489,6 @@ projeto-card {
 .info-contato {
     text-align: left;
     width: 40%;
-    mar
 }
 
 .info-contato h3 {
@@ -481,10 +512,10 @@ projeto-card {
     text-decoration: none;
 }
 
-.info-item a p{
+.info-item a p {
     background: transparent;
     text-decoration: none;
-  
+
 }
 
 .icon {
@@ -533,10 +564,11 @@ projeto-card {
     padding: 15px 20px;
     margin-bottom: 20px;
     background-color: var(--bg-geral);
-    border: 1px solid #e2e8f0;
+    border: none;
+    outline: none;
     border-radius: 8px;
     color: var(--texto-principal);
-    
+
 }
 
 .contato-form input:focus,
@@ -618,7 +650,9 @@ footer p {
     }
 
     @keyframes typing {
-        to { width: 100%;}
+        to {
+            width: 100%;
+        }
     }
 
     .about-grid,
