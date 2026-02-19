@@ -680,6 +680,10 @@ footer p {
     margin-top: 100px;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 768px) {
 
     .menu-toggle {
