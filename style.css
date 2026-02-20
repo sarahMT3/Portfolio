@@ -376,9 +376,11 @@ html {
 }
 
 .about-text p {
+    margin-bottom: 5px;
     background: transparent;
     font-size: 1.25rem;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: justify;
 
 }
 
